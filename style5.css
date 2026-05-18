@@ -1,0 +1,8 @@
+.hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(rgba(10,0,20,0.7), rgba(10,0,20,0.9)),
+                  url('./img/h') center/cover;
+      padding-top: 80px;
+    }

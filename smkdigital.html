@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link 
+href="bootstrap-5.3.8-dist/css/bootstrap.min.css" 
+rel="stylesheet" />
+<script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="style3.css">
+
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./img/smk digital.png" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+      SMK DIGITAL
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Visi Misi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Data Siswa</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">
+            Jurusan
+          </a>
+          <ul class="dropdown-menu bg-dark">
+            
+           
+            <li><a class="dropdown-item text-white" href="pplg.html">PPLG</a></li>
+            <li><a class="dropdown-item text-white" href="tjkt.html">TJKT</a></li>
+            <li><a class="dropdown-item text-white" href="kuliner.html">Kuliner</a></li>
+            <li><a class="dropdown-item text-white" href="busana.html">Busana</a></li>
+            <li><a class="dropdown-item text-white" href="otomotif.html">Otomotif</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-white" href="#">Lihat Semua</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+    <div class="hero">
+        <div
+        class="overlay d-flex justify-content-center align-items-center text-center"
+        >
+    <div class="text-white">
+        <h1 class="display-5 fw-bold">Sistem Manajemen Siswa</h1>
+        <p class="fs-4">Kelola data kehadiran profil, dan status akademik siswa dengan lebih mudah dan efisien.</p>
+        <button class="btn btn-primary ">Lihat Tabel</button>
+        <button type="button" class="btn btn-outline-light position-relative">
+         Panduan
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+         Baru
+        <span class="visually-hidden">unread messages</span>
+        </span>
+       </button>
+       </div>
+      </div>
+    </div>
+<div class="container mt-4 ">
+    <nav aria-label="breadcrumb">
+            <ol class="breadcrumb  bg-light px-3 py-4 rounded shadow-sm">
+                <li class="breadcrumb-item">
+                    <a href="#beranda" class="text-decoration-none">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#beranda" class="text-decoration-none">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#visimisi" class="text-decoration-none">Visi Misi</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#jurusan" class="text-decoration-none">Jurusan</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Data Siswa 2026
+                </li>
+            </ol>
+    </nav>
+</div>
+    
+
+<h3 class="text-center mb-4 text-center mt-5 fw-bold">Mengapa SMK Digital?</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+    <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-mortarboard-fill text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
+  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
+</svg></i>
+        <div>
+          <h5 class="fw-bold mb-1 align-items-start">Lulusan</h5>
+          <p class="text-muted small mb-0">
+            SMK Digital meluluskan banyak siswa yang tak hanya bekerja namun juga berwirausaha dan sekolah tinggi.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+    <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-award-fill text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+  <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+</svg></i>
+        <div>
+          <h5 class="fw-bold mb-1 align-items-start">Prestasi</h5>
+          <p class="text-muted small mb-0">
+            SMK Digital mendapat beberapa prestasi baik dari tingkat lokal sampai internasional.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-4">
+    <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-building-fill text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
+  <path d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
+</svg></i>
+        <div>
+          <h5 class="fw-bold mb-1 align-items-start">Fasilitas</h5>
+          <p class="text-muted small mb-0">
+            SMK Digital memiliki lingkungan belajar yang nyaman serta kelengkapan sarana dan prasarana.
+          </p>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="row justify-content-md-center">
+    <div class="col-4">
+        <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-book-half text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+  <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+</svg></i>
+        <div>
+          <h5 class="fw-bold mb-1 align-items-start">Kurikulum</h5>
+          <p class="text-muted small mb-0">
+            SMK Digital memiliki lingkungan belajar yang nyaman serta kelengkapan sarana dan prasarana.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+        <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-people-fill text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+</svg></i>
+        <div>
+          <h5 class="fw-bold mb-1 align-items-start">Budaya Industri</h5>
+          <p class="text-muted small mb-0">
+           SMK Digital telah menerapkan beberapa budaya industri di lingkungan sekolah.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <div class="container py-5">
+<h2 class="text-center fw-bold mb-4">Visi & Misi Lembaga</h2>
+<div class="row g-4">
+<div class="col-md-5">
+<div class="card h-100 border-primary border-2">
+<div class="card-header bg-primary text-white text-center fw-bold py-3">
+VISI SEKOLAH
+</div>
+<div class="card-body d-flex align-items-center justify-content-center p-4">
+<h3 class="card-title text-center lh-base fw-normal">
+"Menciptakan Insan Bertaqwa yang Solutif: Santun, Optimis, Lugas, Terampil dan Inovatif, Guna Menjunjung Martabat Bangsa."
+</h3>
+</div>
+</div>
+</div>
+<div class="col-md-7">
+<div class="card h-100 shadow-sm">
+<div class="card-header bg-dark text-white text-center fw-bold
+py-3">
+MISI SEKOLAH
+</div>
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex align-items-start p-3"> <span class="badge bg-primary rounded-pill me-3 mt-1">01</span> <div>Excellent; Meningkatkan pelayanan pada siswa dengan mengedepankan pembelajaran yang berpihak pada siswa.</div>
+</li>
+<li class="list-group-item d-flex align-items-start p-3"> <span class="badge bg-primary rounded-pill me-3 mt-1">02</span> <div>Smart; Mengembangkan keunggulan dengan mengedepankan sikap mandiri, kreatif dan kolaboratif sesuai dengan profil pelajar pancasila.</div>
+</li>
+<li class="list-group-item d-flex align-items-start p-3"> <span class="badge bg-primary rounded-pill me-3 mt-1">03</span> <div>Attainable; Mewujudkan sekolah sebagai wadah kreasi, inovasi untuk pengembangan ilmu pengetahuan dan teknologi.</div>
+</li>
+<li class="list-group-item d-flex align-items-start p-3"> <span class="badge bg-primary rounded-pill me-3 mt-1">04</span> <div>Timebound; Menciptakan sekolah yang menerapkan perencanaan berbasis data dan melibatkan seluruh warga sekolah. </div>
+</li>
+<li class="list-group-item d-flex align-items-start p-3"> <span class="badge bg-primary rounded-pill me-3 mt-1">05</span> <div>Actual; Mendidik dan melatih peserta didik sesuai kebutuhan dunia kerja.</div>
+</li>
+</ul>
+</div>
+        </div>
+    </div> 
+    <div class="container py-5">
+    <h2 class="text-center mb-5 fw-bold" id="jurusan">
+        Ringkasan Angkatan per Jurusan
+    </h2>
+
+
+  <div class="row g-4 justify-content-center mb-4">
+        <div class="row g-0">
+          
+  <!-- PPLG -->
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm ">
+
+    <div>
+          <span class="position-absolute top-0 start-50  translate-middle badge rounded-pill bg-danger ">Terpopuler</span>
+    </div>
+
+      <img src="./img/pplg.webp"
+           class="card-img-top"
+           style="height: 200px; object-fit: cover;">
+
+      <div class="card-body">
+        <h5 class="text-primary fw-bold">PPLG</h5>
+
+        <p class="text-muted small">
+          Pengembangan Perangkat Lunak & Gim. Fokus coding, web, dan mobile apps.
+        </p>
+
+        <p class="mb-0"><strong>Siswa:</strong> 120</p>
+        <p class="mb-0"><strong>Lab:</strong> 4 Ruangan</p>
+        <p><strong>Kuota Terisi (108/120)</strong></p>
+
+        <div class="progress mb-3">
+          <div class="progress-bar progress-bar-striped progress-bar-animated"
+               style="width: 90%"></div>
+        </div>
+        <div class="text-end">
+        <a href="pplg.html" class="btn btn-outline-primary btn-sm">
+          Baca Selengkapnya →
+        </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+       <!-- TJKT -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+
+        <img src="./img/tjkt.jpeg" class="card-img-top" style="height:200px; object-fit:cover;">
+
+        <div class="card-body">
+          <h5 class="text-primary fw-bold">TJKT</h5>
+          <p class="text-muted small">
+            Teknik Jaringan Komputer & Telekomunikasi.
+          </p>
+
+          <p class="mb-0"><strong>Siswa:</strong> 115</p>
+          <p class="mb-0"><strong>Lab:</strong> 3 Ruangan</p>
+          <p><strong>Kuota Terisi (100/115)</strong></p>
+
+          <div class="progress mb-3">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 87%"></div>
+          </div>
+         <div class="text-end">
+          <a href="tjkt.html" class="btn btn-outline-primary btn-sm">
+            Baca Selengkapnya →
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--kuliner-->
+    <div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+
+    <img src="./img/kuliner.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+
+    <div class="card-body">
+      <h5 class="text-primary fw-bold">KULINER</h5>
+      <p class="text-muted small">
+        Seni Kuliner & Tata Boga. Menciptakan tenaga profesional di bidang makanan.
+      </p>
+
+      <p class="mb-0"><strong>Siswa:</strong> 115</p>
+      <p class="mb-0"><strong>Dapur:</strong> 3 Standar Industri</p>
+      <p><strong>Kuota Terisi (50/115)</strong></p>
+
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 43%"></div>
+      </div>
+ <div class="text-end">
+      <a href="kuliner.html" class="btn btn-outline-primary btn-sm">
+        Baca Selengkapnya →
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+    <!-- BUSANA -->
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+      <div class="card jurusan-card shadow-sm">
+
+        <img src="./img/busana.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+
+        <div class="card-body">
+          <h5 class="text-primary fw-bold">BUSANA</h5>
+          <p class="text-muted small">
+            Desain dan Produksi Busana. Fokus fashion dan menjahit modern.
+          </p>
+
+          <p class="mb-0"><strong>Siswa:</strong> 90</p>
+          <p class="mb-0"><strong>Studio:</strong> 2 Workshop</p>
+          <p><strong>Kuota Terisi (85/90)</strong></p>
+
+          <div class="progress mb-3">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 94%"></div>
+          </div>
+ <div class="text-end">
+          <a href="busana.html" class="btn btn-outline-primary btn-sm">
+            Baca Selengkapnya →
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--otomotif-->
+    <div class="col-md-4">
+  <div class="card jurusan-card shadow-sm">
+
+    <img src="./img/otomotif.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+
+    <div class="card-body">
+      <h5 class="text-primary fw-bold">OTOMOTIF</h5>
+      <p class="text-muted small">
+        Teknik Kendaraan Ringan. Mempelajari mesin, kelistrikan, dan manajemen bengkel.
+      </p>
+
+      <p class="mb-0"><strong>Siswa:</strong> 130</p>
+      <p class="mb-0"><strong>Bengkel:</strong> 1 Unit Produksi</p>
+      <p><strong>Kuota Terisi (130/130)</strong></p>
+
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 100%"></div>
+      </div>
+ <div class="text-end">
+      <a href="otomotif.html" class="btn btn-outline-primary btn-sm">
+        Baca Selengkapnya →
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="bg-primary text-white py-4">
+    <div class="container">
+        <div class="row text-center align-items-center">
+
+            <div class="col-md-3 col-6 mb-4 mb-md-0">
+                <div class="d-flex align-items-center justify-content-center">
+                    <i class="bi bi-people-fill fs-1 me-3"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+</svg></i>
+                    <div class="text-start">
+                        <h3 class="fw-bold mb-0">2329</h3>
+                        <p class="small mb-0">Siswa Aktif</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6 mb-4 mb-md-0">
+                <div class="d-flex align-items-center justify-content-center">
+                    <i class="bi bi-star-fill fs-1 me-3"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg></i>
+                    <div class="text-start">
+                        <h3 class="fw-bold mb-0">93%</h3>
+                        <p class="small mb-0">Keterserapan</p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="col-md-3 col-6 ">
+                <div class="d-flex align-items-center justify-content-center">
+                    <i class="bi bi-file-earmark-text-fill fs-1 me-3"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+  <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z"/>
+</svg></i>
+                    <div class="text-start">
+                        <h3 class="fw-bold mb-0">A</h3>
+                        <p class="small mb-0">Akreditasi</p>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="col-md-3 col-6">
+                <div class="d-flex align-items-center justify-content-center">
+                    <i class="bi bi-diagram-3-fill fs-1 me-3"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-diagram-3-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5z"/>
+</svg></i>
+                    <div class="text-start">
+                        <h3 class="fw-bold mb-0">130</h3>
+                        <p class="small mb-0">Mitra kerja</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+    
+
+        <div class="container mt-5 text-center" id="datasiswa">
+    <h3 class="text-center fw-bold ">Tabel Data Siswa</h3>
+    <p class="text-muted">Kelola situs administrasi siswa secara real time.</p>
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>Info!</strong> Klik tombol <strong>Edit</strong> untuk mengubah data profil siswa
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+         </div>
+         <div class="text-end">
+<!-- Tombol buka modal -->
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSiswa">
+    Tambah Data Siswa
+  </button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalSiswa" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Header -->
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title">
+            <i class="bi bi-person-plus-fill me-2"></i> Tambah Siswa Baru</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        <form>
+
+          <!-- Nama -->
+          <div class="mb-3">
+            <label class="form-label fw-bold text-start d-block">Nama Lengkap</label>
+            <input type="text" class="form-control" placeholder="Contoh: Budi Santoso" required>
+          </div>
+
+          <!-- Kelas -->
+          <div class="mb-3">
+            <label class="form-label fw-bold text-start d-block">Kelas</label>
+            <select class="form-select" required>
+              <option selected disabled>Pilih Kelas...</option>
+              <option>X RPL 1</option>
+              <option>X RPL 2</option>
+              <option>X RPL 3</option>
+            </select>
+          </div>
+
+          <!-- Foto -->
+          <div class="mb-3">
+            <label class="form-label fw-bold text-start d-block">Foto Profil</label>
+            <input type="file" class="form-control">
+            <small class="text-muted">Format: JPG, PNG (Maks 2MB)</small>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+        <button class="btn btn-primary" data-bs-dismiss="modal">Simpan Data</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+       <button class="btn btn-outline-secondary">Ekspor ke Excel</button>
+       </div>
+
+        <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr class="table-dark">
+              <th>No</th>
+              <th>Foto</th>
+              <th>Nama</th>
+              <th>Kelas</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+                <td class="text-center">
+                <div class="position-relative d-inline-block" style="width: 80px; height: 80px;">
+                <img src="./img/6 (2).jpeg" class="rounded-circle d-blok mx-auto" class="img-fluid" alt="foto profil" width="80vh" heigh="80vh">
+                  <span class="position-absolute bg-success border border-white rounded-circle" 
+          style="width: 18px; height: 18px; top: 5px; right: 5px; display: block;">
+    </span>
+  </div>
+            </td>
+            <td>Meynov</td>
+            <td>X PPLG 1</td>
+            <td><span class="badge bg-success">Aktif</span></td>
+            <td>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger">Hapus</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+                <td class="text-center">
+                <div class="position-relative d-inline-block" style="width: 80px; height: 80px;">
+                <img src="./img/4 (2).jpeg" class="rounded-circle d-blok mx-auto" class="img-fluid" alt="foto profil" width="80vh" heigh="80vh">
+                <span class="position-absolute bg-warning border border-white rounded-circle" 
+          style="width: 18px; height: 18px; top: 5px; right: 5px; display: block;">
+    </span>
+  </div>
+            </td>
+            <td>Arya</td>
+            <td>X PPLG 2</td>
+            <td><span class="badge bg-warning">Izin</span></td>
+            <td>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger">Hapus</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="text-center">
+                <div class="position-relative d-inline-block" style="width: 80px; height: 80px;">
+                <img src="./img/5 (2).jpeg" class="rounded-circle d-blok mx-auto" class="img-fluid" alt="foto profil" width="80vh" heigh="80vh">
+                 <span class="position-absolute bg-danger border border-white rounded-circle" 
+          style="width: 18px; height: 18px; top: 5px; right: 5px; display: block;">
+    </span>
+  </div>
+                
+            </td>
+            <td>Fira</td>
+            <td>X PPLG 3</td>
+            <td><span class="badge bg-danger">Tidak Hadir</span></td>
+             <td>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger">Hapus</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+         <div class="container mt-4 text-center">
+             <nav aria-label="Pagination">
+             <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+             </ul>
+             </nav>
+         </div>
+
+</div>
+ <div class="container mt-5 text-center">
+           <h2> Statistik Kehadiran </h2> 
+           <p>Statistik Kehadiran siswa secara real-time</p>
+           <div class="progress-stacked">
+  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%">
+    <div class="progress-bar bg-success">Hadir 33.3%</div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%">
+    <div class="progress-bar bg-warning">Izin 33.3%</div>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="33.4" aria-valuemin="0" aria-valuemax="100" style="width: 33.4%">
+    <div class="progress-bar bg-danger">Tidak Hadir 33.4%</div>
+  </div>
+</div>
+ 
+<!--mentor-->
+<h3 class="text-center fw-bold mt-5">Mentor</h3>
+    <p class="text-center text-muted">Belajaar bersama mentor luar negeri yang berpenglaman</p>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="shadow h-100 text-center">
+        <img src="img/walter writer.jpeg" class="card-img-top" alt="Gambar"/>
+        <div class="card-body">
+            <div class="card-body">
+          <h5 class="fw-bold">Walter White</h5>
+          <p class="text-muted fst-italic">Mentor Web Development</p>
+          <p class="text-justify small">Pembuatan situs web dari sisi front-end (HTML, CSS, JS) back end (PHP, Node.js, Python) hingga full-stack.</p>
+        </div>
+        <div class="pb-3 text-muted">
+          <i class="bi bi-twitter-x"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></i>
+          <i class="bi bi-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg></i>
+          
+          <i class="bi bi-instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg></i>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="shadow h-100 text-center">
+        <img src="img/sarah jhinson.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="fw-bold">Sarah Jhinson</h5>
+          <p class="text-muted fst-italic">Mentor Back-End Developer</p>
+          <p class="small text-justify">mengelola logika server, dan basis data (database) agar website berfungsi di balik layar.</p>
+        </div>
+        <div class="pb-3 text-muted">
+          <i class="bi bi-twitter-x"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></i>
+          <i class="bi bi-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg></i>
+          
+          <i class="bi bi-instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="shadow h-100 text-center">
+        <img src="img/william anderson.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="fw-bold">William Anderson</h5>
+          <p class="text-muted fst-italic">Mentor Website Builder</p>
+          <p class="small text-center">menggunakan platform seperti Wordpress, Wix, atau Shopify untuk membangun situs tanapa koding teknis mendalam.</p>
+        </div>
+        <div class="pb-3 text-muted">
+          <i class="bi bi-twitter-x"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></i>
+          <i class="bi bi-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg></i>
+          
+          <i class="bi bi-instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="shadow h-100 text-center">
+        <img src="img/amanda rose.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="fw-bold"> Amanda Rose</h5>
+          <p class="text-muted fst-italic">Mentor UI/UX Design </p>
+          <p class="small text-center">fokus pada estetika, tata letak, warna, dan pengalaman pengguna (UX) menggunakan alat seperti Figma atau Adobe XD</p>
+        </div>
+        <div class="pb-3 text-muted">
+          <i class="bi bi-twitter-x"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></i>
+          <i class="bi bi-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg></i>
+          
+          <i class="bi bi-instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg></i>
+        </div>
+      </div>
+    </div>
+</div>
+</div> 
+
+<section class="bg-primary text-white py-5" style="margin-top: 60px;">
+    <div class="container">
+        <div class="row g-4 text-center text-md-start"> 
+            <h3 class="fw-bold mb-3 text-center">
+                KERJA SAMA KAMI
+            </h3> 
+            <p class="text-center mt-0">
+                Membangun sinergi strategis bersama mitra terpercaya untuk menghadirkan solusi inovatif dan <br> berkelanjutan di setiap langkah kami.
+            </p>
+            <style>
+              .logo-partner {
+                filter: brightness(0) invert(1);
+              }
+              
+            </style>
+            <div class="row align-items-center justify-content-center g-4 mt-0">
+                <div class="col-6 col-md-2">
+                    <img src="img/IBM.png" alt="IBM" class="logo-partner img-fluid">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="img/MICROSOFT.png" alt="Microsoft" class="logo-partner img-fluid">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="img/GOOGLE.png" alt="Google" class="logo-partner img-fluid">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="img/FACEBOOK.png" alt="Facebook" class="logo-partner img-fluid">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="img/BUMN.png" alt="bumn" class="logo-partner img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container mt-3 py-5">
+    <h3 class="text-center fw-bold ">Hubungi Kami</h3>
+    <p class="text-muted text-center">Hubungi kami untuk Informasi lebih lanjut</p>
+
+        <div class="row g-0 shadow-sm bg-white rounded-3 overflow-hidden border"> 
+            <div class="col-md-4 bg-light p-3 d-flex flex-column justify-content-center border-end">
+
+                <div class="d-flex align-items-center mb-2">
+                    <div class="bg-primary text-white rounded p-2 me-2">
+                        <i class="bi bi-geo-alt-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+</svg></i>
+                    </div>
+                    <div>
+                        <p class="fw-bold mb-0 text-start" style="font-size: 0.9rem;">Lokasi Kami</p>
+                        <p class="text-muted mb-0" style="font-size: 0.7rem;">Jl. Mercusuar Raya, Jakarta Selatan</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-2">
+                    <div class="bg-primary text-white rounded p-2 me-2">
+                        <i class="bi bi-telephone-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg></i>
+                    </div>
+                    <div>
+                        <p class="fw-bold mb-0 text-start" style="font-size: 0.9rem;">Telephone</p>
+                        <p class="text-muted mb-0" style="font-size: 0.7rem;">+85999345456</p>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="bg-primary text-white rounded p-2 me-2">
+                        <i class="bi bi-envelope-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+</svg></i>
+                    </div>
+                    <div>
+                        <p class="fw-bold mb-0 text-start" style="font-size: 0.9rem;">Email</p>
+                        <p class="text-muted mb-0" style="font-size: 0.7rem;">smkdigital@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-8 px-4 py-3 bg-white text-start">
+                <span class="text-primary fw-bold " style="font-size: 0.65rem; letter-spacing: 1px;">BUTUH BANTUAN?</span>
+                <h5 class="fw-bold mb-2">Kirim Pesan</h5>
+
+                <form>
+                    <div class="row g-2 mb-2">
+                        <div class="col-6">
+                            <input type="text" class="haver form-control form-control-sm border-0 border-bottom rounded-0 px-0" placeholder="Masukkan Nama" style="font-size: 0.75rem;">
+                        </div>
+
+       <div class="col-6">
+                            <input type="email" class="haver form-control form-control-sm border-0 border-bottom rounded-0 px-0" placeholder="Masukkan Email" style="font-size: 0.75rem;">
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <input type="text" class="haver form-control form-control-sm border-0 border-bottom rounded-0 px-0" placeholder="Masukkan Subjek" style="font-size: 0.75rem;">
+                    </div>
+
+                    <div class="mb-3">
+                        <input class="haver form-control form-control-sm border-0 border-bottom rounded-0 px-0" rows="1" placeholder="Ketik Pesan" style="font-size: 0.75rem; min-height: 30px;">
+                    </div>
+
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-primary px-4 py-1 fw-bold">Kirim Pesan</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <small>© 2026 SMK DIGITAL. Seluruh Hak Cipta Dilindungi.</small>
+</footer>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" ></script>
+
+</body>
+</html>

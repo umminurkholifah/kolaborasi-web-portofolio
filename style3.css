@@ -1,0 +1,47 @@
+ body{
+      background: white;
+      color: black;
+     }
+
+    .hero {
+        background-image: url("./img/pendidikan.jpeg");
+        background-size: cover;
+        background-position: center;
+        min-height: 70vh;
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        background: rgba(0, 102, 204, 0.6);
+    }
+
+    .card {
+    position: relative;
+    }
+
+    .badge-populer {
+    position: absolute;
+    top: -8px;      
+    left: 50%;      
+    transform: translateX(-50%);
+    background: #FF3B30;
+    color: #FFF;
+    padding: 4px 12px !important;
+    margin: 0 !important;
+    border-radius: 50px; 
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+ .haver:focus {
+    outline: none; 
+    border-bottom: 2px solid #2e66f7;
+    box-shadow: 0 8px 15px rgba(46, 102, 247, 0.15); 
+    background-color: #e7f3f8; 
+}

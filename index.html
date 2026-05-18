@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">
+      Portfolio
+    </a>
+
+    <button class="navbar-toggler bg-light"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav">
+
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav mx-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#hero">HOME</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">ABOUT</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#skills-section">SKILLS</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#project-section">PROJECT</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <!-- TEXT -->
+      <div class="col-lg-6 text-center text-lg-start">
+
+        <p class="hello">
+          Hello! I Am
+          <span>Ummi Nur Kholifah</span>
+        </p>
+
+        <h5>
+          A Student Developer
+        </h5>
+
+        <h1>
+          Learning to code and building
+          small projects step by step.
+        </h1>
+
+        <p class="desc">
+          I turn ideas into simple and useful digital solutions.
+        </p>
+
+      </div>
+
+      <!-- ROBOT -->
+      <div class="col-lg-6 d-flex justify-content-center mt-5 mt-lg-0">
+
+        <div class="robot-3d">
+
+          <script type="module"
+          src="https://unpkg.com/@splinetool/viewer@1.12.94/build/spline-viewer.js"></script>
+
+          <spline-viewer
+          url="https://prod.spline.design/uapm8qTZUgepGzPl/scene.splinecode">
+          </spline-viewer>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+  <div class="container">
+
+    <h1 class="section-title">
+      ABOUT
+    </h1>
+
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-5 text-center">
+
+        <img src="img/ft.png" class="profile img-fluid"/>
+
+      </div>
+
+      <div class="col-lg-7 text-center text-lg-start">
+
+        <h3>
+          Let me introduce myself
+        </h3>
+
+        <p>
+          Hi, let me introduce myself. My name is Ummi Nur
+          Kholifah, and I'm 16 years old. I'm a 10th grade
+          student majoring in PPLG at SMKN 1 Tengaran.
+        </p>
+
+        <p>
+          I'm someone who is very enthusiastic about learning
+          new things, especially in programming languages
+          such as HTML, CSS, and JavaScript.
+        </p>
+
+        <a href="menu.html">
+
+          <button class="btn-custom">
+            Read More
+          </button>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section py-5" id="skills-section">
+
+  <div class="container">
+
+    <h1 class="title text-center mb-5">
+      MY SKILLS
+    </h1>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- JAVASCRIPT -->
+      <div class="col-md-6">
+
+        <div class="skill-card">
+
+          <div class="d-flex align-items-center gap-4">
+
+            <img src="img/JS.webp" class="skill-icon"/>
+
+            <div class="w-100">
+
+              <div class="d-flex justify-content-between mb-2">
+
+                <span class="skill-name">JavaScript</span>
+                <span class="percent">20%</span>
+
+              </div>
+
+              <div class="progress">
+
+                <div class="progress-bar javascript-bar"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CSS -->
+      <div class="col-md-6">
+
+        <div class="skill-card">
+
+          <div class="d-flex align-items-center gap-4">
+
+            <img src="img/css.png" class="skill-icon"/>
+
+            <div class="w-100">
+
+              <div class="d-flex justify-content-between mb-2">
+
+                <span class="skill-name">CSS</span>
+                <span class="percent">30%</span>
+
+              </div>
+
+              <div class="progress">
+
+                <div class="progress-bar css-bar"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- HTML -->
+      <div class="col-md-6">
+
+        <div class="skill-card">
+
+          <div class="d-flex align-items-center gap-4">
+
+            <img src="img/html.png" class="skill-icon"/>
+
+            <div class="w-100">
+
+              <div class="d-flex justify-content-between mb-2">
+
+                <span class="skill-name">HTML</span>
+                <span class="percent">35%</span>
+
+              </div>
+
+              <div class="progress">
+
+                <div class="progress-bar html-bar"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- VS CODE -->
+      <div class="col-md-6">
+
+        <div class="skill-card">
+
+          <div class="d-flex align-items-center gap-4">
+
+            <img src="img/vsc.png" class="skill-icon"/>
+
+            <div class="w-100">
+
+              <div class="d-flex justify-content-between mb-2">
+
+                <span class="skill-name">Visual Studio Code</span>
+                <span class="percent">40%</span>
+
+              </div>
+
+              <div class="progress">
+
+                <div class="progress-bar vscode-bar"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FIGMA -->
+      <div class="col-md-6">
+
+        <div class="skill-card">
+
+          <div class="d-flex align-items-center gap-4">
+
+            <img src="img/figma.png" class="skill-icon"/>
+
+            <div class="w-100">
+
+              <div class="d-flex justify-content-between mb-2">
+
+                <span class="skill-name">Figma</span>
+                <span class="percent">35%</span>
+
+              </div>
+
+              <div class="progress">
+
+                <div class="progress-bar figma-bar"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- PROJECT -->
+<section class="project-section" id="project-section">
+
+  <div class="container">
+
+    <h1 class="section-title">
+      MY PROJECT
+    </h1>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-4 col-md-6">
+
+        <div class="project-box">
+
+          <div class="card project-card border-0">
+
+            <img src="./img/collaboration.png"
+            class="card-img-top project-img"/>
+
+            <div class="card-body">
+
+              <h2 class="project-name">
+                Collaboration
+              </h2>
+
+              <p class="project-text">
+                A project highlighting teamwork,
+                idea sharing, and achieving goals together.
+              </p>
+
+              <a href="kolaborasi.html" class="project-btn">
+                Read More
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-lg-4 col-md-6">
+
+        <div class="project-box">
+
+          <div class="card project-card border-0">
+
+            <img src="./img/smkdigitall.png"
+            class="card-img-top project-img"/>
+
+            <div class="card-body">
+
+              <h2 class="project-name">
+                Smk Digital
+              </h2>
+
+              <p class="project-text">
+                A project related to digital education
+                and modern technology learning.
+              </p>
+
+              <a href="smkdigital.html" class="project-btn">
+                Read More
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-lg-4 col-md-6">
+
+        <div class="project-box">
+
+          <div class="card project-card border-0">
+
+            <img src="./img/environment.png"
+            class="card-img-top project-img"/>
+
+            <div class="card-body">
+
+              <h2 class="project-name">
+                Environment
+              </h2>
+
+              <p class="project-text">
+                A project emphasizing environmental awareness
+                and sustainability solutions.
+              </p>
+
+              <a href="environment.html" class="project-btn">
+                Read More
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-lg-4 col-md-6">
+
+        <div class="project-box">
+
+          <div class="card project-card border-0">
+
+            <img src="./img/landscape.png"
+            class="card-img-top project-img"/>
+
+            <div class="card-body">
+
+              <h2 class="project-name">
+                Landscape
+              </h2>
+
+              <p class="project-text">
+                A project inspired by nature,
+                scenery, and outdoor creativity.
+              </p>
+
+              <a href="landscape.html" class="project-btn">
+                Read More
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-lg-4 col-md-6">
+
+        <div class="project-box">
+
+          <div class="card project-card border-0">
+
+            <img src="./img/festifal.png"
+            class="card-img-top project-img"/>
+
+            <div class="card-body">
+
+              <h2 class="project-name">
+                Music Festival
+              </h2>
+
+              <p class="project-text">
+                A project connected to music events,
+                branding, and entertainment design.
+              </p>
+
+              <a href="festifalmusik.html" class="project-btn">
+                Read More
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <h1 class="section-title">
+      CONTACT
+    </h1>
+
+    <div class="row g-5">
+
+      <!-- LEFT -->
+      <div class="col-lg-4 text-center text-lg-start">
+
+        <h5>Get In Touch</h5>
+
+        <h1>Contact Me</h1>
+
+        <div class="contact-item">
+
+          <i class="bi bi-geo-alt-fill"></i>
+
+          <div>
+
+            <h4>Location</h4>
+            <p>Indonesia</p>
+
+          </div>
+
+        </div>
+
+        <div class="contact-item">
+
+          <i class="bi bi-telephone-fill"></i>
+
+          <div>
+
+            <h4>Phone</h4>
+            <p>+62 896-8443-3777</p>
+
+          </div>
+
+        </div>
+
+        <div class="contact-item">
+
+          <i class="bi bi-envelope-fill"></i>
+
+          <div>
+
+            <h4>Email</h4>
+            <p>ummi.p25136@satamail.my.id</p>
+
+          </div>
+
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="social-icon">
+
+          <a href="https://www.instagram.com/olxyvi4_/" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://www.tiktok.com/@xyz_lifya" target="_blank">
+            <i class="bi bi-tiktok"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-8">
+
+        <form>
+
+          <div class="row">
+
+            <div class="col-md-6">
+
+              <input type="text" placeholder="First Name"/>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <input type="text" placeholder="Last Name"/>
+
+            </div>
+
+          </div>
+
+          <input type="email" placeholder="Email"/>
+
+          <input type="text" placeholder="Phone Number"/>
+
+          <textarea placeholder="Message"></textarea>
+
+          <button type="button"
+          class="send-btn"
+          onclick="kirimPesan()">
+
+            Send Message
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+
+  <div class="container">
+
+    <div class="row gy-5">
+
+      <!-- ABOUT -->
+      <div class="col-lg-3 col-md-6">
+
+        <h3>ABOUT ME</h3>
+
+        <p>
+          Hi! I'm Ummi Nur Kholifah,
+          a student passionate about
+          Web Development and Visual Design.
+        </p>
+
+        <a href="cv-umminur.pdf"
+        download="CV-UmmiNurKholifah.pdf"
+        class="download-btn">
+
+          <i class="fa-solid fa-download"></i>
+          Download CV
+
+        </a>
+
+      </div>
+
+      <!-- LINKS -->
+      <div class="col-lg-3 col-md-6">
+
+        <h3>QUICK LINKS</h3>
+
+        <ul>
+
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#project-section">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+      </div>
+
+      <!-- FOLLOW -->
+      <div class="col-lg-3 col-md-6">
+
+        <h3>FOLLOW US</h3>
+
+        <div class="footer-social">
+
+          <p>
+            <a href="https://www.instagram.com/olxyvi4_/">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            @olxyvi4_
+          </p>
+
+          <p>
+            <a href="https://www.tiktok.com/@xyz_lifya">
+              <i class="bi bi-tiktok"></i>
+            </a>
+
+            @xyz_lifya
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-lg-3 col-md-6">
+
+        <h3>CONTACT ME</h3>
+
+        <p>
+          <i class="bi bi-geo-alt-fill"></i>
+          Dusun Bambangan, Kebowan,
+          Jawa Tengah
+        </p>
+
+        <p>
+          <i class="bi bi-telephone-fill"></i>
+          +62 896-8443-3777
+        </p>
+
+        <p>
+          <i class="bi bi-envelope-fill"></i>
+          ummi.p25136@satamail.my.id
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

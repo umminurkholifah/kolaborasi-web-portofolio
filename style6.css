@@ -1,0 +1,23 @@
+ hero {
+    background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+ }
+ body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg,#0b1026,#111827,#1e1b4b);
+    }
+    .gradient-text {
+      background: linear-gradient(to right,#ff4fd8,#9333ea,#22d3ee);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }

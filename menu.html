@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .recount-section{
+  background:#06010d;
+  color:white;
+  overflow:hidden;
+}
+
+
+/* RECOUNT BOX */
+
+.recount-box{
+  margin-top:60px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(168,85,247,0.3);
+  border-radius:30px;
+  padding:50px 30px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 30px rgba(168,85,247,0.1);
+}
+
+.recount-card{
+  height:100%;
+  padding:20px;
+  border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.number{
+  width:55px;
+  height:55px;
+  border:1px solid #a855f7;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#a855f7;
+  font-weight:600;
+  margin-bottom:20px;
+}
+
+.icon-box{
+  width:70px;
+  height:70px;
+  background:rgba(168,85,247,0.1);
+  border:1px solid rgba(168,85,247,0.3);
+  border-radius:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#a855f7;
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+.recount-card h3{
+  color:#a855f7;
+  margin-bottom:20px;
+  font-size:28px;
+  font-weight:600;
+}
+
+.recount-card p{
+  color:#d1d1d1;
+  line-height:1.9;
+  font-size:15px;
+}
+
+@media(max-width:992px){
+
+  .title{
+    font-size:40px;
+  }
+
+  .recount-card{
+    border-right:none;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    margin-bottom:20px;
+  }
+
+}
+  </style>
+</head>
+<body>
+
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">Portofolio</a>
+
+      <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">SKILL</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">PROJECT</a>
+          </li>
+
+           <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+    
+   <!-- RECOUNT TEXT SECTION -->
+
+<section class="recount-section py-5">
+
+    <!-- RECOUNT BOX -->
+
+    <div class="recount-box">
+
+      <div class="row g-4">
+
+        <!-- CARD 1 -->
+
+        <div class="col-lg-3">
+
+          <div class="recount-card">
+
+            <div class="number">01</div>
+
+            <div class="icon-box">
+              <i class="bi bi-pencil-square"></i>
+            </div>
+
+            <h3>Introduction</h3>
+
+            <p>
+               In a co-curricular activity, I got an assignment to create a portfolio website.
+                The website was used to show information and the projects that I had made.
+                 At first, I felt confused about choosing the right concept and design for the website, but I kept trying to find ideas and worked on it seriously
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="col-lg-3">
+
+          <div class="recount-card">
+
+            <div class="number">02</div>
+
+            <div class="icon-box">
+              <i class="bi bi-code-slash"></i>
+            </div>
+
+            <h3>The Process</h3>
+
+            <p>
+               First, I prepared the design and collected some pictures and information for the website.
+               After that, I started writing HTML and CSS code on my laptop.
+               Sometimes, I made mistakes in the code, so the website did not look neat.
+               I had to check the code carefully and fix the errors one by one.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="col-lg-3">
+
+          <div class="recount-card">
+
+            <div class="number">03</div>
+
+            <div class="icon-box">
+              <i class="bi bi-palette"></i>
+            </div>
+
+            <h3>Development</h3>
+
+            <p>
+              Then, I added colors, images, buttons, and animations to make the website more attractive.
+              I also learned how to arrange the layout properly so the website would look neat on the screen. Although it was a little difficult, I enjoyed the process because I learned many new things about web design and coding.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div class="col-lg-3">
+
+          <div class="recount-card border-0">
+
+            <div class="number">04</div>
+
+            <div class="icon-box">
+              <i class="bi bi-rocket-takeoff"></i>
+            </div>
+
+            <h3>Result</h3>
+
+            <p>
+               In the end, I successfully finished my portfolio website.
+               I felt happy and proud because I could complete the assignment and gain a new experience in creating a website. From this activity, I learned to be more patient, careful, and creative when working on a project.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- Footer -->
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="row gy-5">
+
+      <!-- About -->
+      <div class="col-lg-3 col-md-6">
+
+        <h3>ABOUT ME</h3>
+
+        <p>
+          Hi! I'm Ummi Nur Kholifah, a student passionate
+          about Web Development and Visual Design.
+        </p>
+
+        <button class="footer-btn">
+          Download CV
+        </button>
+
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-3 col-md-6">
+
+        <h3>QUICK LINKS</h3>
+
+        <ul>
+
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+
+      </div>
+
+      <!-- Follow -->
+      <div class="col-lg-3 col-md-6">
+
+        <h3>FOLLOW US</h3>
+
+        <div class="footer-social">
+
+          <p>
+            <i class="bi bi-instagram"></i>
+            @xyz_lifya
+          </p>
+
+          <p>
+            <i class="bi bi-tiktok"></i>
+            @olxyvi4_
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+
+        <h3>CONTACT ME</h3>
+
+        <p>
+          <i class="bi bi-geo-alt-fill"></i>
+          Dusun Bambangan, Kebowan,
+          Jawa Tengah
+        </p>
+
+        <p>
+          <i class="bi bi-telephone-fill"></i>
+          +62 896-8443-3777
+        </p>
+
+        <p>
+          <i class="bi bi-envelope-fill"></i>
+          ummi.p25136@satamail.my.id
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>
